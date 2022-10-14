@@ -1,0 +1,81 @@
+// Angular Material Table Styles Here
+.mat-table {
+  width: 100% !important;
+  margin-bottom: 12px!important;
+  box-shadow: 0 0 4px #ccc;
+  transition: 4s linear;
+}
+.mat-header-row,
+.mat-row {
+  height: 44px !important;
+}
+.mat-header-cell {
+  background-color: #083aa9;
+  color: white !important;
+  text-align: center !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  border: 1px solid #e8e7e7 !important;
+}
+.mat-header-cell:first-child {
+  border-top-left-radius: 8px;
+  border-left: 1px solid #e8e7e7 !important;
+}
+.mat-header-cell:last-child {
+  border-top-right-radius: 8px;
+  border-right: 1px solid #e8e7e7 !important;
+}
+.mat-cell {
+  font-size: 16px !important;
+  text-align: center !important;
+  color: #606060 !important;
+  height: 44px !important;
+  border: 1px solid #e8e7e7 !important;
+}
+.mat-cell:first-child {
+  border-left: 1px solid #e8e7e7 !important;
+}
+.mat-cell:last-child {
+  border-right: 1px solid #e8e7e7 !important;
+}
+
+
+// Header Styles
+.header-options{
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+
+  .search{
+    width: 65%;
+
+    .search-input{
+      width: 100%;
+    }
+  }
+
+  h2{
+    margin: 12px 20px;
+    color: #083aa9;
+    font-weight: 600;
+  }
+
+  .toggle-button {
+  background-color: #083aa9;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  opacity: 0.9;
+  box-shadow: 0px 0px 4px;
+}
+}
+.charts-container{
+  display: flex;
+  justify-content: center;
+}

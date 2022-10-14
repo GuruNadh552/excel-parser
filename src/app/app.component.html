@@ -1,0 +1,17 @@
+<div class="main-section">
+  <div class="drop-area" *ngIf="!isUploaded else showTable">
+    <div class="dropzone" appDragDrop (filesChangeEmiter)="parseExcel($event)">
+      <input type="file" #fileInputRef id="fileDrop" style="display:none;" (change)="parseExcel($event.target)" accept=".xlsx, .xls, .csv"/>
+      <img src="assets/upload.svg">
+      <h3>Drag and Drop Files to Upload</h3>
+      <h3>or</h3>
+      <button (click)="triggerFileUpload()">Browse</button>
+    </div>
+  </div>
+  <ng-template #showTable>
+    <div class="data-table">
+      <app-table [tableData]="excelData" [graphData]="graphData"></app-table>
+    </div>
+  </ng-template>
+</div>
+<notifier-container></notifier-container>
